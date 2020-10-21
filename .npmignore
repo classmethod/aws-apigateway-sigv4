@@ -1,0 +1,9 @@
+lib/
+test/
+example/
+.idea
+.DS_Store
+.eslintrc.js
+.eslintignore
+.prettierrc.yml
+tsconfig.*.json

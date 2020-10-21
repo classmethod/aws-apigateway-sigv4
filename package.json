@@ -1,15 +1,16 @@
 {
-  "name": "aws-apigateway-sigv4",
+  "name": "@cm-madlabs/aws-apigateway-sigv4",
   "version": "0.0.1",
   "description": "Create request header for IAM authentication of API Gateway",
-  "main": "dist/lib/apigateway-sigv4.js",
-  "types": "dist/lib/apigateway-sigv4.d.ts",
-  "scripts": {
-    "build": "tsc",
-    "lint": "eslint --cache 'lib/**/*.{ts,js}'",
-    "lint-fix": "eslint --cache --fix 'lib/**/*.{ts,js}'"
-  },
+  "main": "dist/lib/index.js",
+  "types": "dist/lib/index.d.ts",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
   "devDependencies": {
     "@types/luxon": "^1.25.0",
     "@types/node": "^14.11.8",
