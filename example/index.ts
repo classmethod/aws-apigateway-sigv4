@@ -1,4 +1,4 @@
-import { createSigV4Header } from '../lib/index';
+import { createSigV4Header } from '@cm-madlabs/aws-apigateway-sigv4';
 import axios from 'axios';
 
 const accessKey = process.env.AWS_ACCESS_KEY_ID!;
