@@ -1,6 +1,6 @@
 {
   "name": "@cm-madlabs/aws-apigateway-sigv4",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Create request header for IAM authentication of API Gateway",
   "main": "dist/lib/index.js",
   "types": "dist/lib/index.d.ts",
