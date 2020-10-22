@@ -1,4 +1,4 @@
-AWS APIGateway SigV4
+AWS API Gateway SigV4
 ---
 
 Create request header for IAM authentication of API Gateway
