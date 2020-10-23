@@ -1,1 +1,1 @@
-export * from './apigateway-sigv4';
+export { createSigV4Header } from './apigateway-sigv4';
