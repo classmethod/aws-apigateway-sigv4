@@ -2,8 +2,8 @@
   "name": "@cm-madlabs/aws-apigateway-sigv4",
   "version": "1.0.2",
   "description": "Create request header for IAM authentication of API Gateway",
-  "main": "dist/lib/index.js",
-  "types": "dist/lib/index.d.ts",
+  "main": "dist/lib/apigateway-sigv4.js",
+  "types": "dist/lib/apigateway-sigv4.d.ts",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
