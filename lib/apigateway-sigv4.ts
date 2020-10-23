@@ -16,12 +16,12 @@ type AuthorizationHeader = {
 type SignerV4Options = {
     url: string;
     headers: AuthorizationHeader;
-    body?: any;
-    pathname: any;
+    body?: string;
+    pathname: () => string;
     methodIndex: string;
-    search: any;
+    search: () => string;
     region: string;
-    method: any;
+    method: string;
 };
 
 type CreateSigV4HeaderInput = {
@@ -35,12 +35,12 @@ type CreateSigV4HeaderInput = {
 };
 
 export function createSigV4Header(
-    input: CreateSigV4HeaderInput,
+    input: CreateSigV4HeaderInput
 ): AuthorizationHeader {
     const credential = new Credentials(
         input.accessKey,
         input.secretAccessKey,
-        input.sessionToken,
+        input.sessionToken
     );
 
     const url = new URL(input.url);

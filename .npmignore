@@ -1,9 +1,9 @@
+.idea/
 lib/
 test/
 example/
 .idea
-.DS_Store
-.eslintrc.js
+.eslintrc.yml
 .eslintignore
-.prettierrc.yml
 tsconfig.*.json
+yarn.lock
