@@ -18,11 +18,12 @@
     "upgrade:show": "ncu",
     "upgrade:do": "ncu -u",
     "lint": "eslint --cache './**/*.{ts,tsx}'",
-    "lint-fix": "eslint --cache --fix './**/*.{ts,tsx}'"
+    "lint-fix": "eslint --cache --fix './**/*.{ts,tsx}'",
+    "test": "jest"
   },
   "devDependencies": {
     "@cm-madlabs/prettier-config": "^1.0.0",
-    "@types/luxon": "^1.25.0",
+    "@types/jest": "26.0.15",
     "@types/node": "^14.11.8",
     "@typescript-eslint/eslint-plugin": "^4.4.1",
     "@typescript-eslint/parser": "^4.4.1",
@@ -33,17 +34,16 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^3.1.4",
     "husky": "^4.3.0",
-    "jest": "^26.5.3",
+    "jest": "26.6.1",
     "lint-staged": "^10.4.0",
     "npm-check-updates": "^9.1.0",
     "prettier": "^2.1.2",
-    "ts-jest": "^26.4.1",
+    "ts-jest": "26.4.1",
     "ts-node": "^9.0.0",
     "typescript": "^4.0.3"
   },
   "dependencies": {
-    "aws-sdk": "^2.772.0",
-    "luxon": "^1.25.0"
+    "aws-sdk": "^2.772.0"
   },
   "prettier": "@cm-madlabs/prettier-config",
   "husky": {
