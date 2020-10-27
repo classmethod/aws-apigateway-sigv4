@@ -1,13 +1,12 @@
 import { URL } from 'url';
 import { Credentials } from 'aws-sdk';
-import * as luxon from 'luxon';
 
 // eslint-disable-next-line
 const core = require('aws-sdk/lib/core');
 
 type Method = 'GET' | 'POST' | 'PUT' | 'DELETE' | 'PATCH';
 
-type AuthorizationHeader = {
+export type AuthorizationHeader = {
     host: string;
     'X-Amz-Date'?: string;
     Authorization?: string;
@@ -43,8 +42,15 @@ export function createSigV4Header(
         input.sessionToken
     );
 
+    if (input.url === '') {
+        throw new Error('url is empty');
+    }
+    if (input.region === '') {
+        throw new Error('region is empty');
+    }
+
     const url = new URL(input.url);
-    const utcNow = new Date(luxon.DateTime.utc().toMillis());
+    const utcNow = new Date();
     const options: SignerV4Options = {
         url: url.toString(),
         headers: {
